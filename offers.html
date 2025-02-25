@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Offers - Tech Burger</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="offers.css">
+  <link rel="icon" type="image/x-icon" href="hamburger.png" >
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <div class="logo">
+        <a href="index.html">
+          <svg viewBox="0 0 150 100" class="tb-logo">
+            <img src="hamburger.png" alt="Tech Burger Logo" height="60px" width="60px">  
+          </svg>
+        </a>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="offers.html" class="active">Offers</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="offers-page">
+    <h1>Special Offers</h1>
+    
+    <div class="offers-grid">
+      <div class="offer-card">
+        <div class="offer-badge">POPULAR</div>
+        <img src="combo1.webp" alt="Family Bundle" class="offer-image">
+        <div class="offer-content">
+          <h2>Family Bundle</h2>
+          <p class="offer-description">4 Tech Burgers, 4 Fries, 4 Drinks</p>
+          <p class="offer-price"><span class="original-price">₹1200</span> <span class="discount-price">₹999</span></p>
+         
+          <button class="cta-btn" onclick="addToOrder('Family Bundle',999)">Add to Order</button>
+        </div>
+      </div>
+
+      <div class="offer-card">
+        <div class="offer-badge">NEW</div>
+        <img src="combo 2.webp" alt="Student Meal" class="offer-image">
+        <div class="offer-content">
+          <h2>Student Special</h2>
+          <p class="offer-description">1  Cheesy Paneer Perfection, 1 Onion Rings, 1 Drink</p>
+          <p class="offer-price"><span class="original-price">₹395</span> <span class="discount-price">₹299</span></p>
+          <button class="cta-btn" onclick="addToOrder('Student Special',299)">Add to Order</button>
+        </div>
+      </div>
+
+      <div class="offer-card">
+        <img src="combo 3.webp" alt="Lunch Deal" class="offer-image">
+        <div class="offer-content">
+          <h2>Lunch Deal</h2>
+          <p class="offer-description">2 Tech Burgers, 2 Fries</p>
+          <p class="offer-price"><span class="original-price">₹400</span> <span class="discount-price">₹329</span></p>
+          <button class="cta-btn" onclick="addToOrder('Lunch Deal',329)">Add to Order</button>
+        </div>
+      </div>
+
+      <div class="offer-card">
+        <div class="offer-badge">LIMITED</div>
+        <img src="combo 4.webp" alt="Weekend Special" class="offer-image">
+        <div class="offer-content">
+          <h2>Weekend Special</h2>
+          <p class="offer-description">1 Spicy Bean Blaster ,1 Green Crunch Delight,1 Cheesy Paneer Perfection
+            , 1 Tech Fries,1 Garlic Butter Mushrooms,1 Garlic Butter Mushrooms, 2 Mango Lassi ,1 Berry Smoothie </p>
+          <p class="offer-price"><span class="original-price">₹1029</span> <span class="discount-price">₹999</span></p>
+          <button class="cta-btn" onclick="addToOrder('Weekend Special',999)">Add to Order</button>
+        </div>
+      </div>
+    </div>
+   
+</div>
+<div class="order-cart">
+  <h3>Your Cart</h3>
+  <div class="cart-items"></div>
+  <p class="cart-total"></p>
+  <button class="checkout-btn" onclick="showBill()">Checkout</button>
+</div>
+<div id="bill-modal" class="bill-modal">
+<div class="bill-content">
+    <h2>Order Summary</h2>
+    <div id="bill-items"></div>
+    <p id="bill-total"></p>
+    <button onclick="confirmOrder()">Confirm Order</button>
+    <button onclick="closeBill()">Close</button>
+</div>
+
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>About TB®</h3>
+        <a href="#about">About Us</a>
+        <a href="#careers">Careers</a>
+        <a href="#franchising">Franchising</a>
+      </div>
+      <div class="footer-section">
+        <h3>Support</h3>
+        <a href="#help">Help</a>
+        <a href="#contact">Contact Us</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="footer-section">
+        <h3>Legal</h3>
+        <a href="#privacy">Privacy Policy</a>
+        <a href="#terms">Terms & Conditions</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>TM & 2025 Tech Burger Corporation. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

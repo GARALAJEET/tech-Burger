@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu - Tech Burger</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="menu.css">
+  <link rel="icon" type="image/x-icon" href="hamburger.png" >
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="hamburger.png" alt="Tech Burger Logo" height="60px" width="60px">  
+        </a>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="menu.html" class="active">Menu</a>
+        <a href="offers.html">Offers</a>
+
+      </div>
+     
+    </div>
+  </nav>
+
+  <main class="menu-page">
+    <h1>Our Menu</h1>
+    
+    <section class="menu-section">
+      <h2>Signature Burgers</h2>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <div class="burger-svg">
+            <img src="clasic.webp" alt="Classic Burger" height="150px" width="150px">
+          </div>
+          <h3>Classic Tech Burger</h3>
+          <p class="ingredients">Grilled soy patty, fresh lettuce, tomato, caramelized onions, cheddar cheese, pickles, special house sauce, sesame seed bun.</p>
+          <span class="price">₹80</span>
+          <button onclick="addToOrder('Classic Tech Burger', 80)">Add to Order</button>
+        </div>
+
+        <div class="menu-item">
+     
+            <img src="green.webp" height="150px" width="321px">
+       
+          <h3>Green Crunch Delight</h3>
+          <p class="ingredients">Spinach patty, lettuce, avocado, cucumber, cheddar cheese, sesame bun, basil mayo.</p>
+          <span class="price">₹95</span>
+          <button onclick="addToOrder('Green Crunch Delight', 8.99)">Add to Order</button>
+        </div>
+
+        <div class="menu-item">
+          <div class="burger-svg">
+            <img src="masu.webp" alt="Veggie Burger" height="150px" width="150px">
+          </div>
+          <h3> Mushroom Melt Supreme</h3>
+          <p class="ingredients">Grilled mushroom patty, caramelized onions, Swiss cheese, arugula, garlic aioli, brioche bun.</p>
+          <span class="price">₹120</span>
+          <button onclick="addToOrder('Mushroom Melt Supreme', 120)">Add to Order</button>
+        </div>
+      </div>  
+    </section>
+    <!-- extra -->
+    <section class="menu-section">
+      <div class="menu-grid">
+        <div class="menu-item">
+          <div class="burger-svg">
+            <img src="spicy.webp"  height="150px" width="150px">
+          </div>
+          <h3> Spicy Bean Blaster</h3>
+         <p class="ingredients">Black bean patty, jalapeños, lettuce, tomato, spicy chipotle sauce, whole wheat bun.</p>
+          <span class="price">₹100</span>
+          <button onclick="addToOrder('Spicy Bean Blaster', 100)">Add to Order</button>
+        </div>
+
+        <div class="menu-item">
+          <div class="burger-svg">
+            <img src="paneer.webp" alt="Double Burger" height="150px" width="150px">
+          </div>
+          <h3> Cheesy Paneer Perfection</h3>
+          <p class="ingredients">Grilled paneer patty, bell peppers, onion, mint chutney, mozzarella, toasted bun.</p>
+          <span class="price">₹175</span>
+          <button onclick="addToOrder(' Cheesy Paneer Perfection<',175)">Add to Order</button>
+        </div>
+
+        <div class="menu-item">
+          <div class="burger-svg">
+            <img src="beetroot.webp" alt="Veggie Burger" height="150px" width="150px">
+          </div>
+          <h3>Beetroot Bliss Burger</h3>
+       <p class="ingredients"> Beetroot and quinoa patty, feta cheese, hummus, pickled onions, multigrain bun.</p>
+          <span class="price">₹150</span>
+          <button onclick="addToOrder('Beetroot Bliss Burger',150)">Add to Order</button>
+        </div>
+      </div>  
+    </section>
+        <!--  -->
+
+    <section class="menu-section">
+      <h2>Sides</h2>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <div class="burger-svg">
+            <img src="pateto.webp" alt="Fries" height="150px" width="150px">
+          </div>
+          <h3>Tech Fries</h3>
+          <p class="ingredients">Crispy golden fries with our special seasoning</p>
+          <span class="price">₹120</span>
+
+          <button onclick="addToOrder('Classic Tech Burger',120)">Add to Order</button>
+        </div>
+
+        <div class="menu-item">
+          <div class="burger-svg">
+            <img src="masu1.webp" alt="Nuggets" height="150px" width="150px">
+          </div>
+        
+          <h3> Garlic Butter Mushrooms </h3>
+          <p class="ingredients"> Mushrooms, butter, garlic, parsley, salt, pepper.</p>
+          <span class="price">₹165</span>
+
+          <button onclick="addToOrder('Spicy Corn on the Cob',135)">Add to Order</button>
+        </div>
+
+        <div class="menu-item">
+          <div class="burger-svg">
+            <img src="Crispy Onion Rings.webp" alt="Onion Rings" height="150px" width="150px">
+          </div>
+          <h3>Onion Rings</h3>
+          <p class="ingredients">Onion, flour, cornstarch, baking powder, milk, bread crumbs.</p>
+          <span class="price">₹140</span>
+          <button onclick="addToOrder('Onion Rings',140)">Add to Order</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-section">
+      <h2>Beverages</h2>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <div class="burger-svg">
+            <img src="mango.webp" alt="Soft Drink" height="150px" width="150px">
+          </div>
+          <h3>Mango Lassi</h3>
+          <p class="ingredients">Mango, yogurt, milk, sugar, cardamom.</p>
+          <span class="price">₹70</span>
+          <button onclick="addToOrder('Mango Lassi',70)">Add to Order</button>
+        </div>
+
+        <div class="menu-item">
+          <div class="burger-svg">
+            <img src="Berry Smoothie.webp" alt="Milkshake" height="150px" width="150px">
+          </div>
+          <h3>Berry Smoothie</h3>
+          <p class="Ingredients">Mixed berries, banana, yogurt, honey.
+          </p>
+          <span class="price">₹80</span>
+          <button onclick="addToOrder('Berry Smoothie',80)">Add to Order</button>
+        </div>
+
+        <div class="menu-item">
+          <div class="burger-svg">
+            <img src="Turmeric Golden Milk.webp" alt="Coffee" height="150px" width="150px">
+          </div>
+          <h3>Turmeric Golden Milk </h3>
+          <p class="ingredients">Milk, turmeric, honey, cinnamon, black pepper.</p>
+          <span class="price">₹75</span>
+          
+          <button onclick="addToOrder('Turmeric Golden Milk ',75)">Add to Order</button>
+        </div>
+      </div>
+      
+    </section>
+    <section class="menu-section">
+      <div class="menu-grid">
+        <div class="menu-item">
+          <div class="burger-svg">
+            <img src="Coconut Water Lemonade.webp" alt="Soft Drink" height="150px" width="150px">
+          </div>
+          <h3>Coconut Water Lemonade </h3>
+          <p class="ingredients">Coconut water, lemon juice, honey, mint.</p>
+          <span class="price">₹65</span>
+          
+          <button onclick="addToOrder('Coconut Water Lemonade ',65)">Add to Order</button>
+        </div>
+
+        <div class="menu-item">
+          <div class="burger-svg">
+            <img src="Iced Matcha Latte.webp" alt="Milkshake" height="150px" width="150px">
+          </div>
+          <h3> Iced Matcha Latte </h3>
+          <p class="ingredients"> Matcha powder, milk, honey, ice..</p>
+          <span class="price">₹70</span>
+          <button onclick="addToOrder('Herbal Iced Tea ',70)">Add to Order</button>
+        </div>
+
+        <div class="menu-item">
+          <div class="burger-svg">
+            <img src="coffe.webp" alt="Coffee" height="150px" width="150px">
+          </div>
+          <h3>Coffee</h3>
+          <p class="ingredients">Fresh brewed coffee</p>
+          <span class="price">₹60</span>
+          <button onclick="addToOrder('Coffee',70)">Add to Order</button>
+        </div>
+      </div>
+      
+    </section>
+   
+    <div class="order-cart">
+      <h3>Your Cart</h3>
+      <div class="cart-items"></div>
+      <p class="cart-total"></p>
+      <button class="checkout-btn" onclick="showBill()">Checkout</button>
+  </div>
+  <div id="bill-modal" class="bill-modal">
+    <div class="bill-content">
+        <h2>Order Summary</h2>
+        <div id="bill-items"></div>
+        <p id="bill-total"></p>
+        <button onclick="confirmOrder()">Confirm Order</button>
+        <button onclick="closeBill()">Close</button>
+    </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>About TB®</h3>
+        <a href="#about">About Us</a>
+        <a href="#careers">Careers</a>
+        <a href="#franchising">Franchising</a>
+      </div>
+      <div class="footer-section">
+        <h3>Support</h3>
+        <a href="#help">Help</a>
+        <a href="#contact">Contact Us</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="footer-section">
+        <h3>Legal</h3>
+        <a href="#privacy">Privacy Policy</a>
+        <a href="#terms">Terms & Conditions</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>TM & 2025 Tech Burger Corporation. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
